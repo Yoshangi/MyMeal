@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 
+  name: MyString
+  age_group: MyString
+  suitable_gender: MyString
+  suitable_for_diabetes: false
+
+two:
+  type: 
+  name: MyString
+  age_group: MyString
+  suitable_gender: MyString
+  suitable_for_diabetes: false

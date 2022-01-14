@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  devise_for :users
+  get 'home/index'
+  root to: "home#index"
+  delete "logout", to: "sessions#destory"
 end
