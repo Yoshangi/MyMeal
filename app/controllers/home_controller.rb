@@ -1,5 +1,4 @@
 class HomeController < ApplicationController
-  def index
-    session[:user_id] = nil  
+  def index  
   end
 end
