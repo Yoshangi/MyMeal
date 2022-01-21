@@ -1,106 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>MyMeal</title>
+</head>
+
 <body>
-    <div class="row ml-0 mr-0">
-        <div class="col-md-6 pr-0">
-            <div class="card">
-                <img class="card-img" src="assets/images/left-img.jpg" alt="">
-                <div class="card-img-overlay d-flex align-items-center justify-content-center flex-column">
-                    <hr />
-                    <h2>Do you need a healthy diet and workout schedule to stay in shape? </h2>
-                    <a href="article.html" class="btn">GO</a>
-                </div>
+    <header class="mt-0 pt-0">
+        <div class="bg-cover clearfix pt-3">
+            <h2 class="logo">MyMeal</h2>
+            <nav class="nav nav-fill mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://facebook.com/fh5co" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://twitter.com/fh5co" target="_blank"><i
+                            class="fab fa-twitter"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-google-plus-g"></i></a>
+                </li>
+            </nav>
+
+            <input type="text" id="nav-search" class="nav-search mx-auto" name="" class="form-control">
+            <div class="ml-0 mr-0 pb-1">
+                <nav class="navbar navbar-expand-md">
+
+                    <button class="navbar-toggler ml-auto" data-target="#my-nav" data-toggle="collapse"
+                        aria-controls="my-nav" aria-expanded="false" onclick="myFunction(this)"
+                        aria-label="Toggle navigation">
+                        <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span>
+                    </button>
+                    <div id="my-nav" class="collapse navbar-collapse">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="article.html">MY ACCOUNT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="article.html">BLOG</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">TERMS & POLICIES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ABOUT US</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">CONTACT US</a>
+                            </li>
+                            <li class="nav-item">
+                                <form action="" method="POST">
+                                    <div class="input-group mt-0 mx-auto" style="width:16px;">
+
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
         </div>
-        <div class="col-md-6 pl-0">
-            <div class="card">
-                <img class="card-img" src="assets/images/right-img.jpg" alt="">
-                <div class="card-img-overlay d-flex align-items-center justify-content-center flex-column">
-                    <hr />
-                    <h2>Do you need a healthy diet and workout schedule that suits your aliments? </h2>
-                    <a href="article.html" class="btn">GO</a>
+
+        <div class="row ml-0 mr-0">
+            <div class="col-md-6 pr-0">
+                <div class="card">
+                    <img class="card-img" src="assets/images/left-img.jpg" alt="">
+                    <div class="card-img-overlay d-flex align-items-center justify-content-center flex-column">
+                        <hr />
+                        <h2>Do you need a healthy diet and workout schedule to stay in shape? </h2>
+                        <a href="article.html" class="btn">GO</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 pl-0">
+                <div class="card">
+                    <img class="card-img" src="assets/images/right-img.jpg" alt="">
+                    <div class="card-img-overlay d-flex align-items-center justify-content-center flex-column">
+                        <hr />
+                        <h2>Do you need a healthy diet and workout schedule that suits your aliments? </h2>
+                        <a href="article.html" class="btn">GO</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 pr-0 first">
+                <div class="card">
+                    <img class="card-img" src="assets/images/architecture.png" alt="">
+                    <div class="card-img-overlay">
+                        <h5>Take the quiz</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 pl-0 pr-0">
+                <div class="card">
+                    <img class="card-img" src="assets/images/interior.png" alt="">
+                    <div class="card-img-overlay">
+                        <h5>How it works</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 pl-0 pr-0">
+                <div class="card">
+                    <img class="card-img" src="assets/images/food.png" alt="">
+                    <div class="card-img-overlay">
+                        <h5>Feedbacks</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 pl-0 last">
+                <div class="card">
+                    <img class="card-img" src="assets/images/travel.png" alt="">
+                    <div class="card-img-overlay">
+                        <h5>Find us on social media</h5>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="col-md-3 pr-0 first">
-            <div class="card">
-                <img class="card-img" src="assets/images/architecture.png" alt="">
-                <div class="card-img-overlay">
-                    <h5>Take the quiz</h5>
-                </div>
-            </div>
-        </div>
+    </header>
 
-        <div class="col-md-3 pl-0 pr-0">
-            <div class="card">
-                <img class="card-img" src="assets/images/interior.png" alt="">
-                <div class="card-img-overlay">
-                    <h5>How it works</h5>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-3 pl-0 pr-0">
-            <div class="card">
-                <img class="card-img" src="assets/images/food.png" alt="">
-                <div class="card-img-overlay">
-                    <h5>Feedbacks</h5>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-3 pl-0 last">
-            <div class="card">
-                <img class="card-img" src="assets/images/travel.png" alt="">
-                <div class="card-img-overlay">
-                    <h5>Find us on social media</h5>
-                </div>
+    <div class="container-fluid jumbotron-fluid stay mt-5 pt-5 pb-5">
+        <h2 class="text-center">We recommend you to consult your physician before starting to follow any program.</h2>
+        <p class="text-center mt-2">MyMeal is about personal meal plans. But we also offer workout schedules and more great things that help you maintain a healthy lifestyle.</p>
+        <div class="input-group mt-4 mx-auto" style="max-width: 640px">
+            <input type="email" class="form-control" placeholder="YOUR EMAIL ADDRESS">
+            <div class="">
+                <button class="btn btn-success ml-2" type="submit">GET MY PLAN</button>
             </div>
         </div>
     </div>
 
-</header>
-
-<div class="container-fluid jumbotron-fluid stay mt-5 pt-5 pb-5">
-    <h2 class="text-center">We recommend you to consult your physician before starting to follow any program.</h2>
-    <p class="text-center mt-2">MyMeal is about personal meal plans. But we also offer workout schedules and more great things that help you maintain a healthy lifestyle.</p>
-    <div class="input-group mt-4 mx-auto" style="max-width: 640px">
-        <input type="email" class="form-control" placeholder="YOUR EMAIL ADDRESS">
-        <div class="">
-            <button class="btn btn-success ml-2" type="submit">GET MY PLAN</button>
+    <footer class="container-fluid pt-5">
+        <div class="container">
+            <h2 class="logo text-center">MyMeal</h2>
+            <nav class="nav nav-fill mx-auto mt-5">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://facebook.com/fh5co" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://facebook.com/fh5co" target="_blank"><i
+                            class="fab fa-twitter"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-google-plus-g"></i></a>
+                </li>
+            </nav>
         </div>
-    </div>
-</div>
+        <div class="copyright mt-4">
+            <p class="text-center">&copy; 2022 <a href="#" class="text-white">MyMeal</a>. All Rights Reserved.</p>
+        </div>
+    </footer>
 
-<footer class="container-fluid pt-5">
-    <div class="container">
-        <h2 class="logo text-center">MyMeal</h2>
-        <nav class="nav nav-fill mx-auto mt-5">
-            <li class="nav-item">
-                <a class="nav-link" href="https://facebook.com/fh5co" target="_blank"><i
-                        class="fab fa-facebook-f"></i></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://facebook.com/fh5co" target="_blank"><i
-                        class="fab fa-twitter"></i></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fab fa-google-plus-g"></i></a>
-            </li>
-        </nav>
-    </div>
-    <div class="copyright mt-4">
-        <p class="text-center">&copy; 2022 <a href="#" class="text-white">MyMeal</a>. All Rights Reserved.</p>
-    </div>
-</footer>
-
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/jquery-1.12.0.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/owl.carousel.min.js"></script>
-<script src="assets/js/jquery.yu2fvl.js"></script>
-<script src="assets/js/main.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/jquery-1.12.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.yu2fvl.js"></script>
+    <script src="assets/js/main.js"></script>
 
 </body>
+
+</html>
