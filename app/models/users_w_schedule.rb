@@ -1,0 +1,2 @@
+class UsersWSchedule < ApplicationRecord
+end

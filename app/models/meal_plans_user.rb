@@ -1,0 +1,2 @@
+class MealPlansUser < ApplicationRecord
+end
