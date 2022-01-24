@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_15_085905) do
+ActiveRecord::Schema.define(version: 2022_01_24_163943) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -54,13 +54,6 @@ ActiveRecord::Schema.define(version: 2022_01_15_085905) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "payments_users", id: false, force: :cascade do |t|
-    t.bigint "user_id", null: false
-    t.bigint "payment_id", null: false
-    t.index ["payment_id", "user_id"], name: "index_payments_users_on_payment_id_and_user_id"
-    t.index ["user_id", "payment_id"], name: "index_payments_users_on_user_id_and_payment_id"
-  end
-
   create_table "user_details", force: :cascade do |t|
     t.string "type"
     t.integer "age"
@@ -95,7 +88,7 @@ ActiveRecord::Schema.define(version: 2022_01_15_085905) do
     t.index ["w_schedule_id", "user_id"], name: "index_users_w_schedules_on_w_schedule_id_and_user_id"
   end
 
-  create_table "workout_schedules", force: :cascade do |t|
+  create_table "w_schedules", force: :cascade do |t|
     t.string "name"
     t.text "description"
     t.string "age_group"
