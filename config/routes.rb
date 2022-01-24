@@ -11,6 +11,5 @@ Rails.application.routes.draw do
   root to: "home#index"
   delete "logout", to: "sessions#destory"
 
-  get 'questionaire/index'
-  resources to: "questionaire#index"
+  resources :questionaire
 end

@@ -95,7 +95,7 @@ ActiveRecord::Schema.define(version: 2022_01_15_085905) do
     t.index ["w_schedule_id", "user_id"], name: "index_users_w_schedules_on_w_schedule_id_and_user_id"
   end
 
-  create_table "w_schedules", force: :cascade do |t|
+  create_table "workout_schedules", force: :cascade do |t|
     t.string "name"
     t.text "description"
     t.string "age_group"
