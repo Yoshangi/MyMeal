@@ -1,0 +1,14 @@
+<%= csrf_meta_tags %>
+<%= csp_meta_tag %>
+
+<%= stylesheet_link_tag '/assets/general/bootstrap.min', media: 'all', 'data-turbolinks-track': 'reload' %>
+<%= stylesheet_link_tag '/assets/general/style', media: 'all', 'data-turbolinks-track': 'reload' %>
+<%= stylesheet_link_tag '/assets/contact_us/main', media: 'all', 'data-turbolinks-track': 'reload' %>
+     
+<body>
+  <%= render 'shared/navbar' %> 
+  <%= yield %>
+</body>
+
+
+
