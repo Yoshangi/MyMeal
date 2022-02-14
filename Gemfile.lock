@@ -77,6 +77,8 @@ GEM
     bootsnap (1.10.2)
       msgpack (~> 1.2)
     builder (3.2.4)
+    call-me (0.0.2.3)
+      refining
     capybara (3.36.0)
       addressable
       matrix
@@ -101,10 +103,17 @@ GEM
     digest (3.1.0)
     erubi (1.10.0)
     ffi (1.15.5)
+    ffi-extra (0.1.0)
+      ffi
+    ffi-inline (0.0.4.3)
+      ffi (>= 0.4.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.9.1)
       concurrent-ruby (~> 1.0)
+    image_processing (1.12.1)
+      mini_magick (>= 4.9.5, < 5)
+      ruby-vips (>= 2.0.17, < 3)
     importmap-rails (1.0.2)
       actionpack (>= 6.0.0)
       railties (>= 6.0.0)
@@ -112,6 +121,7 @@ GEM
     io-wait (0.2.1)
     irb (1.4.1)
       reline (>= 0.3.0)
+    iso-639 (0.3.5)
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
@@ -135,6 +145,7 @@ GEM
     marcel (1.0.2)
     matrix (0.4.2)
     method_source (1.0.0)
+    mini_magick (4.11.0)
     mini_mime (1.1.2)
     mini_portile2 (2.7.1)
     minitest (5.15.0)
@@ -204,6 +215,7 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rake (13.0.6)
+    refining (0.0.5.5)
     regexp_parser (2.2.0)
     reline (0.3.1)
       io-console (~> 0.5)
@@ -211,6 +223,8 @@ GEM
       actionpack (>= 5.0)
       railties (>= 5.0)
     rexml (3.2.5)
+    ruby-vips (2.1.4)
+      ffi (~> 1.12)
     rubyzip (2.3.2)
     sassc (2.4.0)
       ffi (~> 1.9)
@@ -234,6 +248,11 @@ GEM
     stimulus-rails (1.0.2)
       railties (>= 6.0.0)
     strscan (3.0.1)
+    tesseract-ocr (0.1.8)
+      call-me
+      ffi-extra
+      ffi-inline
+      iso-639
     thor (1.2.1)
     tilt (2.0.10)
     timeout (0.2.0)
@@ -268,6 +287,7 @@ DEPENDENCIES
   capybara
   debug
   devise
+  image_processing (~> 1.2)
   importmap-rails
   jbuilder
   pg (~> 1.1)
@@ -278,6 +298,7 @@ DEPENDENCIES
   selenium-webdriver
   sprockets-rails
   stimulus-rails
+  tesseract-ocr
   turbo-rails
   tzinfo-data
   web-console

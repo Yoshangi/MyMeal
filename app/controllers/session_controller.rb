@@ -1,5 +1,4 @@
-class SessionsController < ApplicationController
+class SessionController < ApplicationController
 	def destory
-		session[:user_id] = nil
 	end
 end
