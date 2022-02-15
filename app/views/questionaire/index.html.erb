@@ -1,0 +1,9 @@
+<%= form_with method: :get do |form| %>
+
+<p> <b> 1. Do you want to lose weight? </b> </p>
+<%= form.radio_button :Q1, "I want to lose weight" %>
+<%= form.label :yes, "Yes" %> 
+<%= form.radio_button :Q1, "I don't want to lose weight" %>
+<%= form.label :no, "No" %>
+
+<% end %>

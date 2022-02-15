@@ -6,6 +6,7 @@ class PagesController < ApplicationController
   end
 
   def faq
+    render layout: "faq"
   end
 
   def terms_and_policies
@@ -15,5 +16,6 @@ class PagesController < ApplicationController
   end
 
   def contact_us
+    render layout: "contact_us"
   end
 end
