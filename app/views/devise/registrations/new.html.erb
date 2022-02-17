@@ -1,29 +1,99 @@
-<h2>Sign up</h2>
+<style>
+.panel-default {
+    border-color: #ddd!important;
+}
+.panel {
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+    box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+}
+.panel-body {
+    padding: 15px;
+}
+label{
+  color:#777!important;
+  font-weight: 700;
+  font-size: 14px;
+}
+</style>
+<div class="container">
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
+		<div class="row">
+			<article class="col-xs-12 maincontent">
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
+				<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<h3 class="thin text-center"><b>Sign Up</b></h3>
+							<p class="text-center text-muted"> Enter your details to get your personalized meal and workout schedule </p>
+							<hr>
+							
+							
+              <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+              <%= render "devise/shared/error_messages", resource: resource %>
+                
+                
+                <div class="top-margin">
+                  <%= f.label :First_Name %><span class="text-danger">*</span><br />
+                  <%= f.text_field :first_name, required:true, autofocus: true, autocomplete: "email", class:"form-control" %>
+                </div>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
-  </div>
+                <div class="top-margin">
+                  <%= f.label :last_name %><span class="text-danger">*</span><br />
+                  <%= f.text_field :last_name, required:true, autofocus: true, autocomplete: "email", class:"form-control" %>
+                </div>
+  
+                
+                <div class="top-margin">
+                  <%= f.label :email %><span class="text-danger">*</span><br />
+                  <%= f.text_field :email, required:true, autofocus: true, autocomplete: "email", class:"form-control" %>
+                </div>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
+                <div class="row top-margin" style="margin:0px!important; padding-top:20px">
+                  <div class="col-sm-6" style="padding-left:0px!important">
+                    <%= f.label :password %><span class="text-danger">*</span><br />
+                    <%= f.password_field :password, required:true, autocomplete: "new-password", class:"form-control" %>
+                  </div>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
+                  <div class="col-sm-6">
+                    <%= f.label :password_confirmation %><span class="text-danger">*</span><br />
+                    <%= f.password_field :password_confirmation, required:true, autocomplete: "new-password", class:"form-control" %>
+                  </div>
+                </div>  
 
-<%= render "devise/shared/links" %>
+                 <hr>
+
+								<div class="row" style="margin:0px!important; padding-top:20px">
+									<div class="col-lg-8">
+										<label class="checkbox">
+											<%= f.check_box :page_terms %> 
+											I've read the <a href="page_terms.html">Terms and Conditions</a>
+										</label>                        
+									</div>
+									<div class="col-lg-4 text-right">
+										<%= f.submit "Register", required:true, class:"btn btn-action" %>
+									</div>
+								</div>
+              <% end %>
+              <p class="alert-info"><%= notice %></p>
+              <p class="alert-danger"><%= alert %></p>
+						</div>
+					</div>
+
+				</div>
+				
+			</article>
+			<!-- /Article -->
+
+		</div>
+</div>	<!-- /container -->
+	
+
+
+
+
+
+
+
